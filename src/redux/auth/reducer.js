@@ -1,8 +1,8 @@
 import actions from "./actions";
 
 export const initState = {
-    // isLogged: false,
-    isLogged: true,
+    isLogged: false,
+    // isLogged: true,
     error: null,
     userData: {},
 };

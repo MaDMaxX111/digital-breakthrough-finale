@@ -2,13 +2,11 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
-
-// import Header from './components/Header';
 import privateRoutes from './routes/private';
 import commonRoutes from './routes/common';
-import { LOGIN_URL } from './constants/route';
 import boot from './redux/boot';
 import authActions from './redux/auth/actions';
+import { LOGIN_URL } from './constants/route';
 
 const { logout } = authActions
 
@@ -16,8 +14,9 @@ const RestrictedRoute = ({component: Component, logged, ...rest}) => {
     return (
         <Route
             {...rest}
+            component={Component}
             render={props =>
-                logged ? (
+                logged || true ? (
                     <Component {...props} key={new Date()}/>
                 ) : (
                     <Redirect
@@ -35,6 +34,7 @@ const RestrictedRoute = ({component: Component, logged, ...rest}) => {
 export const MainContainer = ({isLogged = false, userData = {}, logout}) => {
 
     const [booting, setBooting] = useState(true)
+
     useEffect(() => {
         async function booting() {
             await boot();
@@ -47,15 +47,10 @@ export const MainContainer = ({isLogged = false, userData = {}, logout}) => {
     return (
         !booting ?
                 <Router>
-                    {/*<Header*/}
-                    {/*    userData={userData}*/}
-                    {/*    isLogged={isLogged}*/}
-                    {/*    onLogout={logout}*/}
-                    {/*/>*/}
                     {privateRoutes.map((route, index) => (
                         <RestrictedRoute
                             key={index}
-                            exact
+                            // exact
                             path={route.path}
                             component={route.component}
                             logged={isLogged}
