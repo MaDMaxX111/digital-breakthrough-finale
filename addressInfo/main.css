@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+/*меню*/
+#menu {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    padding: 0 80px;
+}
+#menu li {
+    z-index: 1000;
+}
+#menu li:not(:last-of-type) {
+    margin-right: 80px;
+}
+
+#menu li a {
+    font-size: 18px;
+    color: #000;
+}
+
+#menu li a:hover, #menu li.active a {
+    text-decoration: none;
+    color: #E5E5E5;
+}
+
+.firs-section {
+    background-image: url("./image/cloud.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center;
+}
+
+.firs-section .fp-tableCell {
+    display: flex;
+    flex-direction: row;
+}
+.firs-section .fp-tableCell .wrap-image {
+    background-image: url("./image/tumblr_opyi3lrCbr1v3adc7o10_1280.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center;
+    height: 100%;
+    flex: 1;
+}
+.firs-section .fp-tableCell .description {
+    max-width: 60%;
+    min-width: 60%;
+}
+.firs-section .fp-tableCell h2 {
+    font-size: 80px;
+    margin-bottom: 40px;
+    background: linear-gradient(#FFD7D1 0%, #000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.firs-section .fp-tableCell p {
+    letter-spacing: 5px;
+    padding-right: 70px;
+    font-size: 24px;
+}
+.firs-section p.postscipt {
+    letter-spacing: unset;
+    margin-bottom: 60px;
+    font-size: 20px;
+    text-align: right;
+    color: #797979;
+}
+
+.section .title {
+    background: linear-gradient(#FFD7D1 0%, #000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-136%);
+    font-size: 48px;
+}
+
+.section {
+    padding: 0 80px;
+}
+.fp-tableCell {
+    position: relative;
+}
+
+
+/*#menu {*/
+/*    height: 60px;*/
+/*    left: 0;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    width: 100%;*/
+/*    z-index: 70;*/
+/*    text-align: right;*/
+/*    background: #fff;*/
+/*}*/
+
+/*#menu li {*/
+/*    background: rgba(255, 255, 255, 0.5);*/
+/*    border-radius: 4px;*/
+/*    color: #000;*/
+/*    display: inline-block;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*!*Стиль ссылки когда активен соответствующий блок*!*/
+/*#menu li a, #menu li.active a {*/
+/*    display: block;*/
+/*    padding: 9px 18px;*/
+/*    text-decoration: none;*/
+/*    color:#ccc;*/
+/*}*/
+
+/*!*Стиль элемента списка когда активен соответствующий блок*!*/
+/*#menu li.active {*/
+/*    background: rgba(0, 0, 0, 0.5);*/
+/*    color: #fff;*/
+/*}*/
+
+/*карты*/
+.wrap-map {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    bottom: 10%;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.map-section {
+    width: 100%;
+    height: 100%;
+}
+
+#map-section-2 svg path{
+    fill: #FFD7D1;
+    cursor: pointer;
+}
+
+
+
+/*ranger*/
+.slider-container {
+    /*position: absolute;*/
+    /*top: 10%;*/
+    /*z-index: 10000;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    cursor: pointer;
+}
+.back-bar .pointer {
+    cursor: pointer!important;
+}
+
+.theme-green .back-bar {
+    height: 2px;
+    background-color: #FFD7D1;
+    background-image: none;
+}
+
+.theme-green .back-bar .selected-bar {
+    background-color: #FFD7D1;
+    background-image: none;
+}
+
+.theme-green .scale ins {
+    font-weight: 100;
+    font-size: 24px;
+    background: linear-gradient(#FFD7D1 0%, #000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 10px;
+}
+
+.slider-container .back-bar .pointer.last-active, .theme-green .back-bar .pointer {
+    width: 15px;
+    height: 15px;
+    background: #FFD7D1;
+    border: none;
+}
+
+.slider-container .scale span {
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFD7D1;
+    border: none;
+    transform: translate(-50%,-75%);
+}
+.theme-green .back-bar .pointer {
+    top: -7px;
+}
+.pointer-label.high {
+    display: none;
+}
