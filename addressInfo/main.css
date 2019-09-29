@@ -46,11 +46,12 @@
     background-image: url("./image/tumblr_opyi3lrCbr1v3adc7o10_1280.png");
     background-repeat: no-repeat;
     background-size: 80%;
-    background-position: center center;
+    background-position: center -10px;
     height: 100%;
     flex: 1;
 }
 .firs-section .fp-tableCell .description {
+    padding-top: 100px;
     max-width: 60%;
     min-width: 60%;
 }
@@ -74,11 +75,11 @@
     color: #797979;
 }
 
-.section .title {
+.section .title h2{
     background: linear-gradient(#FFD7D1 0%, #000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: translateY(-136%);
+    transform: translateY(-100%);
     font-size: 48px;
 }
 
@@ -88,42 +89,6 @@
 .fp-tableCell {
     position: relative;
 }
-
-
-/*#menu {*/
-/*    height: 60px;*/
-/*    left: 0;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    width: 100%;*/
-/*    z-index: 70;*/
-/*    text-align: right;*/
-/*    background: #fff;*/
-/*}*/
-
-/*#menu li {*/
-/*    background: rgba(255, 255, 255, 0.5);*/
-/*    border-radius: 4px;*/
-/*    color: #000;*/
-/*    display: inline-block;*/
-/*    margin: 10px;*/
-/*}*/
-
-/*!*Стиль ссылки когда активен соответствующий блок*!*/
-/*#menu li a, #menu li.active a {*/
-/*    display: block;*/
-/*    padding: 9px 18px;*/
-/*    text-decoration: none;*/
-/*    color:#ccc;*/
-/*}*/
-
-/*!*Стиль элемента списка когда активен соответствующий блок*!*/
-/*#menu li.active {*/
-/*    background: rgba(0, 0, 0, 0.5);*/
-/*    color: #fff;*/
-/*}*/
 
 /*карты*/
 .wrap-map {
@@ -142,21 +107,61 @@
     height: 100%;
 }
 
-#map-section-2 svg path{
-    fill: #FFD7D1;
+[data-slide="birth"] #map-section-2 svg path{
+    fill: #fc624e;
     cursor: pointer;
 }
 
+[data-slide="smert"] #map-section-2 svg path{
+    fill: #000;
+    cursor: pointer;
+}
 
+[data-slide="effectivnost"] #map-section-2 svg path{
+    fill: #45d873;
+    cursor: pointer;
+}
 
+#map-section-2 svg path:hover:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}
+/*меню*/
+.vertical-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg) translateY(-500%) translateX(45%);
+}
+.vertical-menu ul {
+    display: flex;
+    list-style: none;
+}
+.vertical-menu ul li {
+    cursor: pointer;
+    font-size: 18px;
+    color: #000;
+}
+
+.vertical-menu ul li.active {
+    color: #E5E5E5;
+}
+
+.vertical-menu ul li:not(:last-of-type) {
+    margin-right: 60px;
+}
 /*ranger*/
 .slider-container {
-    /*position: absolute;*/
-    /*top: 10%;*/
-    /*z-index: 10000;*/
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
     cursor: pointer;
+}
+
+[data-slide="effectivnost"] .slider-container {
+    display: none;
 }
 .back-bar .pointer {
     cursor: pointer!important;
@@ -203,4 +208,64 @@
 }
 .pointer-label.high {
     display: none;
+}
+
+[data-slide="smert"] .theme-green .back-bar{
+    background: #000;
+}
+
+[data-slide="smert"] .theme-green .back-bar .selected-bar{
+    background: #000;
+}
+
+[data-slide="smert"] .theme-green .back-bar .selected-bar{
+    background: #000;
+}
+
+[data-slide="smert"] .slider-container .back-bar .pointer.last-active, [data-slide="smert"] .theme-green .back-bar .pointer {
+    background: #000;
+}
+
+[data-slide="smert"] .slider-container .scale span {
+    background: #000;
+}
+
+[data-slide="birth"] .theme-green .back-bar{
+     background: #FFD7D1;
+ }
+
+[data-slide="birth"] .theme-green .back-bar .selected-bar{
+    background: #FFD7D1;
+}
+
+[data-slide="birth"] .theme-green .back-bar .selected-bar{
+    background: #FFD7D1;
+}
+
+[data-slide="birth"] .slider-container .back-bar .pointer.last-active, [data-slide="birth"] .theme-green .back-bar .pointer {
+    background: #FFD7D1;
+}
+
+[data-slide="birth"] .slider-container .scale span {
+    background: #FFD7D1;
+}
+
+[data-slide="effectivnost"] .theme-green .back-bar{
+    background: #B2F4C6;
+}
+
+[data-slide="effectivnost"] .theme-green .back-bar .selected-bar{
+    background: #B2F4C6;
+}
+
+[data-slide="effectivnost"] .theme-green .back-bar .selected-bar{
+    background: #B2F4C6;
+}
+
+[data-slide="effectivnost"] .slider-container .back-bar .pointer.last-active, [data-slide="effectivnost"] .theme-green .back-bar .pointer {
+    background: #B2F4C6;
+}
+
+[data-slide="effectivnost"] .slider-container .scale span {
+    background: #B2F4C6;
 }

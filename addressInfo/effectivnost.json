@@ -1,0 +1,186 @@
+[
+  {
+    "region": "Республика Калмыкия",
+    "code": "RU-KAL",
+    "count": "1",
+    "birth_5_years": 3096.0,
+    "death_5_years": 141.0,
+    "efficiency": 2391.0
+  },
+  {
+    "region": "Республика Мордовия",
+    "code": "RU-MO",
+    "count": "1",
+    "birth_5_years": 7436.0,
+    "death_5_years": 70.0,
+    "efficiency": 7086.0
+  },
+  {
+    "region": "Курганская область",
+    "code": "RU-KGN",
+    "count": "1",
+    "birth_5_years": 9942.0,
+    "death_5_years": -2.0,
+    "efficiency": 9952.0
+  },
+  {
+    "region": "Рязанская область",
+    "code": "RU-RYA",
+    "count": "1",
+    "birth_5_years": 10679.0,
+    "death_5_years": -10.0,
+    "efficiency": 10729.0
+  },
+  {
+    "region": "Тверская область",
+    "code": "RU-TVE",
+    "count": "1",
+    "birth_5_years": 11153.0,
+    "death_5_years": -20.0,
+    "efficiency": 11253.0
+  },
+  {
+    "region": "Липецкая область",
+    "code": "RU-LIP",
+    "count": "1",
+    "birth_5_years": 12029.0,
+    "death_5_years": -4.0,
+    "efficiency": 12049.0
+  },
+  {
+    "region": "Калининградская область",
+    "code": "RU-KLG",
+    "count": "1",
+    "birth_5_years": 13456.0,
+    "death_5_years": 53.0,
+    "efficiency": 13191.0
+  },
+  {
+    "region": "Ярославская область",
+    "code": "RU-YAR",
+    "count": "1",
+    "birth_5_years": 14649.0,
+    "death_5_years": 13.0,
+    "efficiency": 14584.0
+  },
+  {
+    "region": "Приморский край",
+    "code": "RU-PRI",
+    "count": "1",
+    "birth_5_years": 16212.0,
+    "death_5_years": -41.0,
+    "efficiency": 16417.0
+  },
+  {
+    "region": "Забайкальский край",
+    "code": "RU-ZAB",
+    "count": "1",
+    "birth_5_years": 17173.0,
+    "death_5_years": 62.0,
+    "efficiency": 16863.0
+  },
+  {
+    "region": "Томская область",
+    "code": "RU-TOM",
+    "count": "1",
+    "birth_5_years": 17494.0,
+    "death_5_years": 20.0,
+    "efficiency": 17394.0
+  },
+  {
+    "region": "Алтайский край",
+    "code": "RU-ALT",
+    "count": "1",
+    "birth_5_years": 18711.0,
+    "death_5_years": 32.0,
+    "efficiency": 18551.0
+  },
+  {
+    "region": "Волгоградская область",
+    "code": "RU-VGG",
+    "count": "1",
+    "birth_5_years": 20505.0,
+    "death_5_years": -54.0,
+    "efficiency": 20775.0
+  },
+  {
+    "region": "Республика Ингушетия*",
+    "code": "RU-ING",
+    "count": "1",
+    "birth_5_years": 20631.0,
+    "death_5_years": -14.0,
+    "efficiency": 20701.0
+  },
+  {
+    "region": "Республика Дагестан",
+    "code": "RU-DAG",
+    "count": "2",
+    "birth_5_years": 41358.0,
+    "death_5_years": -20.0,
+    "efficiency": 20729.0
+  },
+  {
+    "region": "Республика Башкортостан",
+    "code": "RU-BA",
+    "count": "2",
+    "birth_5_years": 46127.0,
+    "death_5_years": 108.0,
+    "efficiency": 22793.5
+  },
+  {
+    "region": "Кемеровская область - Кузбасс",
+    "code": "RU-KEM",
+    "count": "1",
+    "birth_5_years": 27118.0,
+    "death_5_years": 45.0,
+    "efficiency": 26893.0
+  },
+  {
+    "region": "Саратовская область",
+    "code": "RU-SAR",
+    "count": "1",
+    "birth_5_years": 27748.0,
+    "death_5_years": 83.0,
+    "efficiency": 27333.0
+  },
+  {
+    "region": "Удмуртская Республика",
+    "code": "RU-UD",
+    "count": "1",
+    "birth_5_years": 28465.0,
+    "death_5_years": -36.0,
+    "efficiency": 28645.0
+  },
+  {
+    "region": "Ставропольский край",
+    "code": "RU-STA",
+    "count": "1",
+    "birth_5_years": 34533.0,
+    "death_5_years": 129.0,
+    "efficiency": 33888.0
+  },
+  {
+    "region": "Ростовская область",
+    "code": "RU-ROS",
+    "count": "1",
+    "birth_5_years": 41384.0,
+    "death_5_years": 39.0,
+    "efficiency": 41189.0
+  },
+  {
+    "region": "Краснодарский край",
+    "code": "RU-KDA",
+    "count": "1",
+    "birth_5_years": 63599.0,
+    "death_5_years": 206.0,
+    "efficiency": 62569.0
+  },
+  {
+    "region": "Московская область",
+    "code": "RU-MOS",
+    "count": "1",
+    "birth_5_years": 85844.0,
+    "death_5_years": 250.0,
+    "efficiency": 84594.0
+  }
+]
